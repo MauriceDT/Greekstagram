@@ -1,5 +1,5 @@
 {
-  "name": "guitartists",
+  "name": "Greekstagram",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TobyVersteeg/guitartists.git"
+    "url": "git+https://github.com/MauriceDT/Greekstagram.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TobyVersteeg/guitartists/issues"
+    "url": "https://github.com/MauriceDT/Greekstagram/issues"
   },
-  "homepage": "https://github.com/TobyVersteeg/guitartists#readme",
+  "homepage": "https://github.com/MauriceDT/Greekstagram#readme",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1"
