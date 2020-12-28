@@ -28,14 +28,14 @@ return [
     'seeder' => [
         'type' => 'array',
         'data' => array([
-            'first_name' => 'Toby',
-            'last_name'  => 'Versteeg',
-            'email'      => 'toby@codegorilla.nl',
+            'first_name' => 'Maurice',
+            'last_name'  => 'di Tolve',
+            'email'      => 'maurice@codegorilla.nl',
             'password'   => password_hash('Gorilla1!', PASSWORD_DEFAULT),
             'role'       => 1,
             'country'    => 156,
             'city'       => 'Groningen',
-            'birthday'   => '1970-05-17',
+            'birthday'   => '1989-09-26',
             'created'    => date('Y-m-d H:i:s'),
             'created_by' => 1,
         ]),
