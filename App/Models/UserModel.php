@@ -24,8 +24,8 @@ class UserModel extends Model
     public function __construct()
     {
         parent::__construct(
-            $this->model, 
-            $this->limit, 
+            $this->model,
+            $this->limit,
             $this->protectedFields
         );
     }
@@ -41,13 +41,10 @@ class UserModel extends Model
     public static function setUserSession(array $data)
     {
         $_SESSION['user'] = [
-            'id'         => $data['id'],
-            'first_name' => $data['first_name'],
-            'last_name'  => $data['last_name'],
-            'full_name'  => $data['first_name'] . " " . $data['last_name'],
+            'id'            => $data['id'],
+            'username'      => $data['username'],
         ];
     }
-
 }
 
 new UserModel;

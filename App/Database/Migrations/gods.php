@@ -24,7 +24,7 @@ return [
         `created_by` int(11) NOT NULL,
         `created` timestamp NOT NULL,
         PRIMARY KEY (`id`)
-    ) ENGINE=MyISAM  DEFAULT CHARSET=latin1;",
+    ) ENGINE=InnoDB  DEFAULT CHARSET=latin1;",
 
     // Seeder data goes here
     'seeder' => [

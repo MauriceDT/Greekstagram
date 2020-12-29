@@ -3,14 +3,16 @@
         <div class="mb-3">
             <span class="guitar-icon">
                 <img src="../images/electric-guitar.svg">
-                <div><h3>Guitar(t)ists</h3></div>
+                <div>
+                    <h3>Guitar(t)ists</h3>
+                </div>
             </span>
         </div>
 
         <form method="POST" name="frmLogin" onsubmit="return false;">
             <div class="mb-3">
-                <label for="email" class="form-label">Your email address</label>
-                <input type="email" class="form-control" name="email" id="email" value="toby@codegorilla.nl" required />
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
             </div>
 
             <div class="mb-3">
