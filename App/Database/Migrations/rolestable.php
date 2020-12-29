@@ -15,21 +15,22 @@ return [
         `updated_by` int(11),
         `deleted_by` int(11),
         PRIMARY KEY (`id`)
-    ) ENGINE=MyISAM  DEFAULT CHARSET=latin1;",
+    ) ENGINE=InnoDB  DEFAULT CHARSET=latin1;",
 
     'seeder' => [
         'type' => 'array',
         'data' => array(
-        [
-            'name'       => 'admin',
-            'created'    => date('Y-m-d H:i:s'),
-            'created_by' => 1
-        ],
+            [
+                'name'       => 'admin',
+                'created'    => date('Y-m-d H:i:s'),
+                'created_by' => 1
+            ],
 
-        [
-            'name'       => 'user',
-            'created'    => date('Y-m-d H:i:s'),
-            'created_by' => 1
-        ]),
+            [
+                'name'       => 'user',
+                'created'    => date('Y-m-d H:i:s'),
+                'created_by' => 1
+            ]
+        ),
     ],
 ];

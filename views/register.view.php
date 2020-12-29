@@ -4,7 +4,7 @@
             <span class="guitar-icon">
                 <img src="../images/electric-guitar.svg">
                 <div>
-                    <h3>Guitar(t)ists - Register</h3>
+                    <h3>Greekstagram - Register</h3>
                 </div>
             </span>
         </div>
@@ -12,14 +12,19 @@
         <div class="alert alert-danger" id="register-message" role="alert"></div>
         <form method="POST" onsubmit="return false;" name="frmRegister" class="row g-3">
             <div class="col-md-6">
-                <label for="first_name" class="form-label">First name</label>
-                <input type="text" class="form-control" name="first_name" id="first_name" maxlength="80" required>
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" name="username" id="username" maxlength="80" required>
             </div>
-            <div class="col-md-6 mb-3">
-                <label for="last_name" class="form-label">Last name</label>
-                <input type="text" class="form-control" name="last_name" id="last_name" maxlength="80" required>
+            <div class="form-group col-md-6">
+                <label for="follows_god">Which God do you favor?</label>
+                <select id="follows_god" class="form-control mt-2" name="follows_god">
+                    <option selected>Choose...</option>
+                    <option>Zeus</option>
+                    <option>Hades</option>
+                    <option>Gaia</option>
+                    <option>Thanatos</option>
+                </select>
             </div>
-            
             <div class="col-md-12 mb-3">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" name="email" id="email" maxlength="255" required>

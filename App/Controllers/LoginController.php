@@ -11,8 +11,7 @@ class LoginController
     public function __construct($function = null)
     {
         if (!empty($function)) {
-            if (method_exists(get_class(), $function))
-            {
+            if (method_exists(get_class(), $function)) {
                 $this->$function();
             }
         }
@@ -40,14 +39,11 @@ class LoginController
     {
         // $securityIssue = decryptToken($_REQUEST['crf_token'], $_SESSION['token']) === false;
 
-        if (isset($_REQUEST['email']) && isset($_REQUEST['password']))
-        {
+        if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
             $sql = "SELECT * FROM `users` WHERE `email`='" . $_REQUEST['email'] . "'";
             $res = MySql::query($sql)->fetch();
-            if ($res !== false)
-            {
-                if (password_verify($_REQUEST['password'], $res['password']))
-                {
+            if ($res !== false) {
+                if (password_verify($_REQUEST['password'], $res['password'])) {
                     $this->setUserSession($res);
 
                     return json_encode([
@@ -75,7 +71,7 @@ class LoginController
     /**
      * Write user data to SESSION
      */
-    private function setUserSession($user) : void
+    private function setUserSession($user): void
     {
         $_SESSION['user'] = [
             'uid'        => $user['id'],
@@ -85,5 +81,4 @@ class LoginController
             'full_name'  => $user['first_name'] . (!empty($user['insertion']) ? $user['insertion'] : "") . " " . $user['last_name'],
         ];
     }
-
 }
