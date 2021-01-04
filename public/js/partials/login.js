@@ -1,21 +1,21 @@
-$(document).ready(function() {
-    $('#email').focus();
+$(document).ready(function () {
+    $('#username').focus();
 
-    $('form[name="frmLogin"]').on('submit', function(e) {
+    $('form[name="frmLogin"]').on('submit', function (e) {
         let error = false;
-        const email = $.trim($('#email').val())
+        const username = $.trim($('#username').val())
         const password = $.trim($('#password').val())
 
-        if (email == '' || password == '') {
+        if (username == '' || password == '') {
             return false
         }
 
-        $('input').on('focus', function() {
+        $('input').on('focus', function () {
             $('#login-message').hide();
         })
 
-        $('input[type="text"], input[type="password"]').on('focus', function() {
-            $('#email').removeClass('input-error')
+        $('input[type="text"], input[type="password"]').on('focus', function () {
+            $('#username').removeClass('input-error')
             $('#password').removeClass('input-error')
         })
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
             url: 'login/auth',
             method: 'POST',
             data: $(this).serialize(),
-            success: function(result) {
+            success: function (result) {
                 const data = JSON.parse(result)
                 if (data.success) {
                     $('form[name="frmLogin"] input[type="submit"]').prop('disabled', false)
