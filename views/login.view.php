@@ -4,15 +4,15 @@
             <span class="guitar-icon">
                 <img src="../images/electric-guitar.svg">
                 <div>
-                    <h3>Guitar(t)ists</h3>
+                    <h3>Greekstagram</h3>
                 </div>
             </span>
         </div>
 
         <form method="POST" name="frmLogin" onsubmit="return false;">
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
+                <label for="username" class="form-label">username</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="username" required />
             </div>
 
             <div class="mb-3">

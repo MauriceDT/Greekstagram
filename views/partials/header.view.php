@@ -5,7 +5,7 @@
             <span class="guitar-icon">
                <img src="../images/electric-guitar.svg">
                <div>
-                  <h1>Guitar(t)ists</h1>
+                  <h1>Greekstagram</h1>
                </div>
             </span>
          </div>
@@ -13,7 +13,7 @@
             <div class="user-info">
                <?php if (isset($_SESSION) && isset($_SESSION['user'])) : ?>
                   <div>
-                     <a href="me"><?= $_SESSION['username'] ?></a>
+                     <a href="me"><?= $_SESSION['user']['username'] ?></a>
                      <span>
                         <a href="logout">
                            <img src="images/logout.svg" id="logout" alt="logout" title="Log out" />

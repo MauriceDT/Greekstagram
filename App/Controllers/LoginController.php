@@ -39,8 +39,8 @@ class LoginController
     {
         // $securityIssue = decryptToken($_REQUEST['crf_token'], $_SESSION['token']) === false;
 
-        if (isset($_REQUEST['email']) && isset($_REQUEST['password'])) {
-            $sql = "SELECT * FROM `users` WHERE `email`='" . $_REQUEST['email'] . "'";
+        if (isset($_REQUEST['username']) && isset($_REQUEST['password'])) {
+            $sql = "SELECT * FROM `users` WHERE `username`='" . $_REQUEST['username'] . "'";
             $res = MySql::query($sql)->fetch();
             if ($res !== false) {
                 if (password_verify($_REQUEST['password'], $res['password'])) {
@@ -74,11 +74,8 @@ class LoginController
     private function setUserSession($user): void
     {
         $_SESSION['user'] = [
-            'uid'        => $user['id'],
-            'first_name' => $user['first_name'],
-            'insertion'  => $user['insertion'],
-            'last_name'  => $user['last_name'],
-            'full_name'  => $user['first_name'] . (!empty($user['insertion']) ? $user['insertion'] : "") . " " . $user['last_name'],
+            'uid'            => $user['id'],
+            'username'       => $user['username'],
         ];
     }
 }
