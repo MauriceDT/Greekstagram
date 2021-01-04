@@ -1,8 +1,8 @@
 <div class="login-overlay">
     <div class="center-box register-form">
         <div class="mb-3">
-            <span class="guitar-icon">
-                <img src="../images/electric-guitar.svg">
+            <span class="greekstagram-icon">
+                <img src="../images/old-man.svg">
                 <div>
                     <h3>Greekstagram - Register</h3>
                 </div>

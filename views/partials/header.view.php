@@ -2,10 +2,10 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-6">
-            <span class="guitar-icon">
-               <img src="../images/electric-guitar.svg">
+            <span class="greekstagram-icon">
+               <img src="../images/old-man.svg" id="headerIMG">
                <div>
-                  <h1>Greekstagram</h1>
+                  <h1 id="headerLogoText">Greekstagram</h1>
                </div>
             </span>
          </div>
