@@ -14,10 +14,11 @@ a:visited {
 
 header {
     height: 135px;
-    background-color: rgb(25, 10, 19, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     color: white;
     z-index: 1;
+    
 }
 
 .center-box {
@@ -60,38 +61,38 @@ header {
     height: 100%;
 }
 
-.guitar-icon img {
+.greekstagram-icon img {
     width: 150px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .register-form img {
     width: 100px;
 }
 
-.guitar-icon h3,
-.guitar-icon h1 {
+.greekstagram-icon h3,
+.greekstagram-icon h1 {
     display: inline;
     margin-left: 20px;
     font-family: 'Handlee', cursive;
     font-size: 3rem;
 }
 
-.guitar-icon h2 {
+.greekstagram-icon h2 {
     font-size: 2rem;
 }
 
-.guitar-icon h1 {
+.greekstagram-icon h1 {
     font-size: 4.5rem;
 }
 
-header .guitar-icon {
+header .greekstagram-icon {
     margin-left: 20px;
     margin-top: 20px;
     position: absolute;
 }
 
-.guitar-icon div {
+.greekstagram-icon div {
     margin-top: 15px;
     display: inline;
     position: absolute;

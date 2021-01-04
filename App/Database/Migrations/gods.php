@@ -36,7 +36,7 @@ return [
                 'god_name'          => "Zeus",
                 'roman_god_name'    => "Jupiter",
                 'god_title'         => "King of the Gods, God of the sky",
-                'god_over'          => "The sky, Thunder and Lightning",
+                'god_over'          => "The Sky, Thunder and Lightning",
                 'god_quote'         => "Aphrodite had the beauty;Zeus had the thunderbolts. Everyone loved Aphrodite, but everyone listened to Zeus.",
                 'god_group'         => "Olympians",
                 'has_had_sex_with_zeus'    => 0,
