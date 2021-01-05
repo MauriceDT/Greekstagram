@@ -14,6 +14,8 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+Small Changes to Personal Page (ME), can now see own username as you're logged in.
+
 Animations done, all of the content non-responsive so far. It does however, look alright for now.
 
 AllGods Page Header + text added, first placeholder design finished.

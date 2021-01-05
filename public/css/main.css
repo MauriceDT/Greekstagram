@@ -113,9 +113,13 @@ header .greekstagram-icon {
 }
 
 footer {
-    height: 120px;
-    background-color: lavenderblush;
+    left: 50%;
     width: 100%;
+    height: 50px;
+    color: whitesmoke;
+    font-weight: 300;
+    background-color: darkgrey;
+
 }
 
 .overlay {
