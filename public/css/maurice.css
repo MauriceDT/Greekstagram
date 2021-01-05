@@ -89,7 +89,8 @@
 /* Picture Fade Straight away */
 /* Picture Fade Straight away */
 #votePic001 {
-    animation: fadeInAnimation001 ease 1s;
+    animation-name: fadeInAnimation001;
+    animation-duration: 2s;
     position: relative;
     border-radius: 2%;
     top: 10%;
@@ -111,8 +112,8 @@
     }
 }
 
-/* First Text Fade After 1s */
-/* First Text Fade After 1s */
+/* First Text Fade After 0.5s */
+/* First Text Fade After 0.5s */
 #allGodsPageVoteText {
     animation-name: fadeInAnimation002;
     animation-duration: 1s;
@@ -135,13 +136,13 @@
     }
 }
 
-/* Second Text Fade After 1.5s */
-/* Second Text Fade After 1.5s */
+/* Second Text Fade After 1s */
+/* Second Text Fade After 1s */
 #allGodsPageVoteButton { 
     font-size: 2rem;
     font-weight: 400;
     animation-name: fadeInAnimation003;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -168,8 +169,8 @@
     font-size: 3rem;
     font-weight: 700;
     animation-name: fadeInAnimation004;
-    animation-duration: 1s;
-    animation-delay: 1.5s;
+    animation-duration: 0.7s;
+    animation-delay: 1.75s;
     opacity: 0;
     animation-fill-mode: forwards;
     position: relative;
