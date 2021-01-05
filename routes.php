@@ -16,3 +16,7 @@ $router->get('users', 'App/Controllers/UserController.php@index');
 $router->post('users/store', 'App/Controllers/UserController.php');
 
 $router->get('artists', 'App/Controllers/ArtistController.php@index');
+
+
+//Newer pages
+$router->get('allgods', 'App/Controllers/AllGodsController.php@index');
