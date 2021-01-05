@@ -14,7 +14,11 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+Animations done, all of the content non-responsive so far. It does however, look alright for now.
 
+AllGods Page Header + text added, first placeholder design finished.
+
+AllGods page added.
 
 Button added on front-page, now links directly to 'Register', might be changed at a later stage.
 

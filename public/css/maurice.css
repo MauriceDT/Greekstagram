@@ -32,6 +32,24 @@
     width: 600px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 3rem;
+    animation-name: homePageFadeIn;
+    animation-duration: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in;
+}
+@keyframes  homePageFadeIn {
+    0% {
+        opacity: 0;
+        top: 40%;
+       
+        
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+       
+    }
 }
 
 #homePageKnop {
@@ -44,4 +62,134 @@
     color: #403333;
     background-color: #736151;
     text-shadow: none;
+}
+
+#allgods_bg {
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/allgods_bg.jpeg");
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.thisHasToMoveDown {
+    position: absolute ;
+    top: 35%;
+    right: 20%;
+    left: 20%;
+}
+
+#votePic001:hover {
+    position: relative;
+    top: 7.5%;
+    transition: .35s ease-out;
+
+}
+
+/* Picture Fade Straight away */
+/* Picture Fade Straight away */
+#votePic001 {
+    animation: fadeInAnimation001 ease 1s;
+    position: relative;
+    border-radius: 2%;
+    top: 10%;
+    cursor: pointer;
+
+}
+
+@keyframes  fadeInAnimation001 {
+    0% {
+        opacity: 0;
+        position: relative;
+        top: 5%;
+        
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        
+    }
+}
+
+/* First Text Fade After 1s */
+/* First Text Fade After 1s */
+#allGodsPageVoteText {
+    animation-name: fadeInAnimation002;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    font-size: 3.3rem;
+    font-weight: 800;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes  fadeInAnimation002 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50%, 0);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Second Text Fade After 1.5s */
+/* Second Text Fade After 1.5s */
+#allGodsPageVoteButton { 
+    font-size: 2rem;
+    font-weight: 400;
+    animation-name: fadeInAnimation003;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes  fadeInAnimation003 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50%, 0);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Third Text Fade After 1.5s */
+/* Third Text Fade After 1.5s */
+#allGodsPageShowGods {
+    top: 80%;
+    left: 60%;
+    font-size: 3rem;
+    font-weight: 700;
+    animation-name: fadeInAnimation004;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+    transition-timing-function: ease-in;
+}
+
+#allGodsPageShowGods:hover {
+    cursor: pointer;
+    top: 82%;
+    transition: .35s ease-out;
+}
+
+@keyframes  fadeInAnimation004 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -50%, 0);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
