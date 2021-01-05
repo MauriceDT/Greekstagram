@@ -48,7 +48,7 @@ class LoginController
 
                     return json_encode([
                         'success'  => true,
-                        'message'  => "Succesfull loged in.",
+                        'message'  => "Succesfully logged in.",
                         'redirect' =>  ""
                     ]);
                 } else {

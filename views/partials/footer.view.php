@@ -1,1 +1,1 @@
-<footer>Footer</footer>
+<footer class="mt-auto">&copy; 2021 Greekstagram</footer>

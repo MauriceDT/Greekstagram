@@ -43,6 +43,7 @@ class UserModel extends Model
         $_SESSION['user'] = [
             'id'            => $data['id'],
             'username'      => $data['username'],
+            'follows_god'   => $data['follows_god'],
         ];
     }
 }
