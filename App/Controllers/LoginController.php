@@ -76,6 +76,8 @@ class LoginController
         $_SESSION['user'] = [
             'uid'            => $user['id'],
             'username'       => $user['username'],
+            'follows_god'    => $user['follows_god'],
+            'email'          => $user['email'],
         ];
     }
 }

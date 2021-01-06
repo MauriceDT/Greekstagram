@@ -3,12 +3,14 @@
 namespace App\Controllers;
 
 use App\Libraries\View;
+use App\Models\AllGodsModel;
 
-class AllGodsController
+class AllGodsController extends Controller
 {
 
     public function index()
     {
-        return View::render('allgods/home-allgods');
+        $gods = AllGodsModel::all();
+        return View::render('allgods/home-allgods', $vars = ['gods' => $gods]);
     }
 }

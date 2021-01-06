@@ -44,6 +44,7 @@ class UserModel extends Model
             'id'            => $data['id'],
             'username'      => $data['username'],
             'follows_god'   => $data['follows_god'],
+            'email'         => $data['email'],
         ];
     }
 }
