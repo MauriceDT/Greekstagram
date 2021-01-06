@@ -1,6 +1,7 @@
 <?php require 'views/partials/header.view.php' ?>
 
-<body id="homepage_achtergrond">
+
+<div id="homepage_achtergrond">
     <div class="container-fluid align-items-center">
         <div class="centerTekstje text-center">
             <div class="" id="homepage_center_text">
@@ -15,4 +16,4 @@
             </div>
         </div>
     </div>
-</body>
+</div>

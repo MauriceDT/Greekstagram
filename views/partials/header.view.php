@@ -2,12 +2,14 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-6">
-            <span class="greekstagram-icon">
-               <img src="../images/old-man.svg" id="headerIMG">
-               <div>
-                  <h1 id="headerLogoText">Greekstagram</h1>
-               </div>
-            </span>
+            <a href="home">
+               <span class="greekstagram-icon">
+                  <img src="../images/old-man.svg" id="headerIMG">
+                  <div>
+                     <h1 id="headerLogoText">Greekstagram</h1>
+                  </div>
+               </span>
+            </a>
          </div>
          <div class="col-md-6">
             <div class="user-info">

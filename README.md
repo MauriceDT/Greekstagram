@@ -14,6 +14,14 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+In the AllGodsPage a foreach loop now loops over all the 'gods' and displays cards with the correct Data.
+
+Added AllGodsController, it can now collect info from the 'gods' table in the database.
+
+Added AllGodsModel, it extends Model.
+
+Changes to Personal Page, now correctly shows which God the user follows.
+
 Small Changes to Personal Page (ME), can now see own username as you're logged in.
 
 Animations done, all of the content non-responsive so far. It does however, look alright for now.
