@@ -6,7 +6,13 @@
 <br>
 <br>
 <br>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <h1>My Username = <span class="bg-danger text-white"><?= $_SESSION['user']['username'] ?></span></h1>

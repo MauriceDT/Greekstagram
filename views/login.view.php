@@ -2,7 +2,7 @@
     <div class="center-box login-form">
         <div class="mb-3">
             <span class="greekstagram-icon">
-                <img src="../images/old-man.svg">
+                <img src="../images/statue.svg" id="headerLoginIMG">
                 <div>
                     <h3>Greekstagram</h3>
                 </div>
@@ -25,7 +25,10 @@
             <div class="mb-3">
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="submit" class="btn btn-dark" value="Login" />
+                        <input type="submit" class="btn btn-mau" value="Login" />
+                        <a href="home">
+                            <input type="button" class="btn btn-mau" value="Cancel" />
+                        </a>
                     </div>
                     <div class="col-md-6">
                         <div id="login-message"></div>

@@ -11,7 +11,7 @@
             </div>
             <div class="col-md-6 text-white">
                 <p class="" id="allGodsPageVoteText">There is an active vote</p>
-                <p> <button class="btn btn-warning" id="allGodsPageVoteButton">Click Here To Show Vote</button> </p>
+                <p> <button class="btn btn-mau" id="allGodsPageVoteButton">Click Here To Show Vote</button> </p>
 
                 <p class="" id="allGodsPageShowGods">Show All Gods &darr; &darr; &darr;</p>
             </div>
@@ -24,26 +24,22 @@
 <!-- Actual content below the HEADER -->
 
 <div class="container mt-5">
-    <div class="row row-cols-3">
+    <div class="row">
         <?php foreach ($vars['gods'] as $god) : ?>
             <!-- <p>dd($god->god_group);</p> -->
-            <div class="card col m-1" id="allGodsPageCard">
-                <img class="card-img-top" src="...">
+            <div class="card col-md-4 m-2 text-center pb-5" id="allGodsPageCard">
+                <img id="god_card_IMG" class="card-img-top rounded mt-3" src="/public/images/cards/<?= $god->god_card_image ?>">
                 <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title fs-3 fw-bold" id="god_card_name">
                         <?= $god->god_name ?>
                     </h5>
-                    <p class="card-text"><?= $god->god_title ?></p>
+                    <p class="card-text mt-2 fs-5 fw-bold"><?= $god->god_title ?></p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
+                    <li class="list-group-item fs-4">
                         <?= $god->god_group ?>
                     </li>
                 </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
             </div>
 
         <?php endforeach; ?>

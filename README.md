@@ -14,6 +14,16 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+Added small functionality, several buttons, new styling included as 'btn-mau'.
+
+Header updated slightly, same with Register/Login pages. Additional Styling is needed, but it is acceptable for now.
+
+New Folder added to images, called 'cards', it will hold pictures for the GoDCards. Routing works.
+
+Added a first layer of styling to the AllGodsPage cards.
+
+AllGodsModel is now added to the Register Page, so future-users can select a God to follow directly from the DB, rather than 4 placeholders. On the register view page there is once again a foreach loop which displays said Gods.
+
 In the AllGodsPage a foreach loop now loops over all the 'gods' and displays cards with the correct Data.
 
 Added AllGodsController, it can now collect info from the 'gods' table in the database.

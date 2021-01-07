@@ -2,7 +2,7 @@
     <div class="center-box register-form">
         <div class="mb-3">
             <span class="greekstagram-icon">
-                <img src="../images/old-man.svg">
+                <img src="../images/statue.svg" id="headerLoginIMG">
                 <div>
                     <h3>Greekstagram - Register</h3>
                 </div>
@@ -19,10 +19,9 @@
                 <label for="follows_god">Which God do you favor?</label>
                 <select id="follows_god" class="form-control mt-2" name="follows_god">
                     <option selected>Choose...</option>
-                    <option>Zeus</option>
-                    <option>Hades</option>
-                    <option>Gaia</option>
-                    <option>Thanatos</option>
+                    <?php foreach ($vars['gods'] as $god) : ?>
+                        <option><?= $god->god_name ?></option>
+                    <?php endforeach; ?>
                 </select>
             </div>
             <div class="col-md-12 mb-3">
@@ -43,8 +42,8 @@
             <input type="hidden" name="token" value="register">
 
             <div class="col-md-12 mb-3">
-                <input type="submit" class="btn btn-dark" value="Submit">
-                <input type="button" class="btn btn-dark" id="register-cancel" value="Cancel">
+                <input type="submit" class="btn btn-mau" value="Submit">
+                <input type="button" class="btn btn-mau" id="register-cancel" value="Cancel">
             </div>
         </form>
     </div>
