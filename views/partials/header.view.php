@@ -4,7 +4,7 @@
          <div class="col-md-6">
             <a href="home">
                <span class="greekstagram-icon">
-                  <img src="../images/old-man.svg" id="headerIMG">
+                  <img src="../images/statue.svg" id="headerIMG">
                   <div>
                      <h1 id="headerLogoText">Greekstagram</h1>
                   </div>

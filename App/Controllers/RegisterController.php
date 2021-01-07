@@ -5,13 +5,15 @@ namespace App\Controllers;
 use App\Libraries\View;
 use App\Libraries\MySql;
 use App\Models\UserModel;
+use App\Models\AllGodsModel;
 
 class RegisterController
 {
 
     public function index()
     {
-        return View::render('register.view');
+        $gods = AllGodsModel::all();
+        return View::render('register.view', $vars = ['gods' => $gods]);
     }
 
     public function store()

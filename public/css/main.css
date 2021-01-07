@@ -32,7 +32,7 @@ header {
 
 .register-form {
     width: 50%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .6);
     padding: 50px;
     border-radius: 10px;
     color: white;
@@ -47,14 +47,14 @@ header {
 
 .login-form {
     width: 35%;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .6);
     padding: 50px;
     border-radius: 10px;
     color: white;
 }
 
 .login-overlay {
-    background: url('../images/bg-guitarist.jpg');
+    background: url('../images/register_bg.jpeg');
     background-size: cover;
     position: fixed;
     width: 100%;
