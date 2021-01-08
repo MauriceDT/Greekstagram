@@ -16,16 +16,21 @@ class AllGodsController extends Controller
 
     public function show()
     {
-        if (isset($_GET['god_id']) && (int)$_GET['god_id'] > 0) {
-            $gods = AllGodsModel::get($_GET['god_id']);
-
-            // if (is_null($gods)) {
-            //     return View::render
-            // }
-
-            return View::render('allgods/god-detail.view', $vars = ['gods' => $gods]);
+        if (isset($_GET['god_id'])) {
+            $god_id = (int)$_GET['god_id'];
+            if ($god_id > 0) {
+                if (AllGodsModel::existsById($god_id, 'gods')) {
+                    View::render('god-detail.view', [
+                        'god' => AllGodsModel::get($_GET['god_id']),
+                    ]);
+                } else {
+                    dd('This record does not exist');
+                }
+            } else {
+                dd('Give me a integer!!!');
+            }
+        } else {
+            dd('give me a god_id!');
         }
-
-        return View::render('allgods/gods404.view');
     }
 }
