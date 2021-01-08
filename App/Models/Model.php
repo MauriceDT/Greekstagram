@@ -48,6 +48,13 @@ class Model
      * Fetching one record based on the id
      * @return object
      */
+    public static function existsById($id, $table)
+    {
+        $sql = "SELECT `id` FROM `" . $table . "` WHERE `id`=" . $id;
+        $res = MySql::query($sql);
+        return $res->rowCount() > 0;
+    }
+
     public static function get(int $id, array $selectedFields = null)
     {
         if ($id === 0) return null;
