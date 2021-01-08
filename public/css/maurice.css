@@ -240,3 +240,10 @@
     height: 15rem;
 }
 
+#god_card_title {
+    color: black;
+}
+#god_card_group {
+    color: black;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}

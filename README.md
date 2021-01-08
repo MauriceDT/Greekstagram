@@ -14,7 +14,7 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
-
+Added new routes, to specific Gods their pages. ID's are now correct, yet content can not be reached yet.
 
 Changes to AllGodsPage, all animations now have the same timings on hover, and will 'fade-out' after animation is done as well. Added some shadows ontop of the header as user enters the page, to make it appear the content is all on the same 'height' or 'layer'.
 
