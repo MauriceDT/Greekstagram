@@ -14,6 +14,10 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+
+
+Changes to AllGodsPage, all animations now have the same timings on hover, and will 'fade-out' after animation is done as well. Added some shadows ontop of the header as user enters the page, to make it appear the content is all on the same 'height' or 'layer'.
+
 Added small functionality, several buttons, new styling included as 'btn-mau'.
 
 Header updated slightly, same with Register/Login pages. Additional Styling is needed, but it is acceptable for now.
