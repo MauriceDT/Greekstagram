@@ -2,7 +2,7 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-md-6">
-            <a href="home">
+            <a href="/home">
                <span class="greekstagram-icon">
                   <img src="../images/statue.svg" id="headerIMG">
                   <div>
@@ -18,7 +18,7 @@
                      <a href="me"><?= $_SESSION['user']['username'] ?></a>
                      <span>
                         <a href="logout">
-                           <img src="images/logout.svg" id="logout" alt="logout" title="Log out" />
+                           <img src="/public/images/logout.svg" id="logout" alt="logout" title="Log out" />
                         </a>
                      </span>
                   </div>

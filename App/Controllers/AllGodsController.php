@@ -18,13 +18,15 @@ class AllGodsController extends Controller
     {
         if (isset($_GET['god_id'])) {
             $god_id = (int)$_GET['god_id'];
+
             if ($god_id > 0) {
                 if (AllGodsModel::existsById($god_id, 'gods')) {
+
                     View::render('god-detail.view', [
-                        'god' => AllGodsModel::get($_GET['god_id']),
+                        'god' => AllGodsModel::get($god_id)
                     ]);
                 } else {
-                    dd('This record does not exist');
+                    dd('This God does not exist');
                 }
             } else {
                 dd('Give me a integer!!!');

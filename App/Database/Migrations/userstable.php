@@ -23,14 +23,25 @@ return [
 
     'seeder' => [
         'type' => 'array',
-        'data' => array([
-            'username'      => 'MauriceDT',
-            'follows_god'   => 'Chaos',
-            'email'         => 'maurice@codegorilla.nl',
-            'password'      => password_hash('Gorilla1!', PASSWORD_DEFAULT),
-            'role'          => 1,
-            'created'       => date('Y-m-d H:i:s'),
-            'created_by'    => 1,
-        ]),
+        'data' => array(
+            [
+                'username'      => 'MauriceDT',
+                'follows_god'   => 'Zeus',
+                'email'         => 'maurice@codegorilla.nl',
+                'password'      => password_hash('Gorilla1!', PASSWORD_DEFAULT),
+                'role'          => 1,
+                'created'       => date('Y-m-d H:i:s'),
+                'created_by'    => 1,
+            ],
+            [
+                'username'      => 'Kevin',
+                'follows_god'   => 'Hera',
+                'email'         => 'kevin@kevin.nl',
+                'password'      => password_hash('kevin', PASSWORD_DEFAULT),
+                'role'          => 1,
+                'created'       => date('Y-m-d H:i:s'),
+                'created_by'    => 1,
+            ]
+        ),
     ],
 ];
