@@ -14,6 +14,10 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+New Folder added under public/images/*show_bg**, has since been filled with the right images (in .jpg format).
+
+Removed 'Countries' Table, as there won't be use for it in my project.
+
 Show God Page (or God Detail Page) now works according to plan, Styling will be added shortly.
 
 'deleted' and 'deleted_by' fields have now been re-added to the gods migration page, as 'deleted' field was required to be NOT NULL in other areas of code.
