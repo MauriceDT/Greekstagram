@@ -13,6 +13,10 @@ class AllGodsModel extends Model
     // Non writable fields
     protected $protectedFields = [
         'id',
+        'updated',
+        'deleted',
+        'updated_by',
+        'deleted_by',
         'created_by',
         'created'
     ];

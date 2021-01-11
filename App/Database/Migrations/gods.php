@@ -23,6 +23,8 @@ return [
         `known_mother` varchar(120),
         `created_by` int(11) NOT NULL,
         `created` timestamp NOT NULL,
+        `deleted` timestamp,
+        `deleted_by` int(11),
         PRIMARY KEY (`id`)
     ) ENGINE=InnoDB  DEFAULT CHARSET=latin1;",
 
