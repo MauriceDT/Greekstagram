@@ -15,9 +15,9 @@
             <div class="user-info">
                <?php if (isset($_SESSION) && isset($_SESSION['user'])) : ?>
                   <div>
-                     <a href="me"><?= $_SESSION['user']['username'] ?></a>
+                     <a href="/me"><?= $_SESSION['user']['username'] ?></a>
                      <span>
-                        <a href="logout">
+                        <a href="/logout">
                            <img src="/public/images/logout.svg" id="logout" alt="logout" title="Log out" />
                         </a>
                      </span>
