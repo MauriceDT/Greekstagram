@@ -247,3 +247,16 @@
     color: black;
     border-top: 2px solid rgba(0, 0, 0, 0.3);
 }
+
+
+/* GodShowPage stuff */
+/* GodShowPage stuff */
+
+.GodShowBG {
+   position: center;
+   max-width: 100%;   
+   background-size: 100%;
+   background-attachment: fixed;
+
+}
+
