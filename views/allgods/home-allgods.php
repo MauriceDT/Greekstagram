@@ -26,6 +26,7 @@
 <div class="container mt-5">
     <div class="row">
         <?php foreach ($vars['gods'] as $god) : ?>
+
             <div class="card col-md-4 m-2 text-center pb-4" id="allGodsPageCard">
                 <a href="allgods/detail?god_id=<?= $god->id ?>">
                     <img id="god_card_IMG" class="card-img-top rounded mt-3" src="/public/images/cards/<?= $god->god_card_image ?>">

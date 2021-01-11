@@ -251,6 +251,9 @@
 
 /* GodShowPage stuff */
 /* GodShowPage stuff */
+.card {
+    border: none;
+}
 
 .GodShowBG {
    position: center;
@@ -258,5 +261,49 @@
    background-size: 100%;
    background-attachment: fixed;
 
+}
+
+.card_01 {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(115, 97, 81, 0.7);
+    position: absolute ;
+    left: 10%;
+    top: 25%;
+    padding: 1em;
+    border: none;
+    z-index: 1;
+}
+
+.card_02 {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(115, 97, 81, 0.7);
+    position: absolute ;
+    left: 13%;
+    top: 35%;
+    padding: 1em;
+    z-index: 2;
+}
+
+.card_03 {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(115, 97, 81, 0.7);
+    position: absolute ;
+    left: 45%;
+    top: 10%;
+    padding: 1em;
+    z-index: 1;
+}
+
+.card_04 {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(115, 97, 81, 0.7);
+    position: absolute ;
+    left: 70%;
+    top: 30%;
+    padding: 1em;
 }
 
