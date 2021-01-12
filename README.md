@@ -14,6 +14,14 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+Animations added (first timing, not finetuned yet) to 'ShowGodPage' (or God Detail Page).
+
+The landing page now has an if statement that checks if there is an active user, and will display content accordingly. Buttons added as well.
+
+Additional Styling added in the ShowGodPage, trying to figure out how to place everything. 
+
+Some Seeders have been changed in the Gods Table. Also manually changed in the DB.
+
 New Folder added under public/images/*show_bg**, has since been filled with the right images (in .jpg format).
 
 Removed 'Countries' Table, as there won't be use for it in my project.

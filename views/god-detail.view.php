@@ -8,16 +8,16 @@
     <div class="position-absolute card_01">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title fs-2"><?= $vars['god']->god_name ?></h5>
+                <h5 class="card-title fs-1"><?= $vars['god']->god_name ?></h5>
             </div>
         </div>
     </div>
 
-    <div class="position-absolute card_02">
+    <div class="position-absolute card_02 fs-5">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title"><?= $vars['god']->roman_god_name ?></h5>
-                <p class="card-text">Roman Equivalent</p>
+                <h5 class="card-title fs-4"><?= $vars['god']->roman_god_name ?></h5>
+                <p class="card-text fs-5">Roman Equivalent</p>
             </div>
         </div>
     </div>
@@ -25,30 +25,62 @@
     <div class="position-absolute god_card_IMG card_03">
         <img class="card-img-top rounded mt-1" src="/public/images/cards/<?= $vars['god']->god_card_image ?>">
     </div>
-</div>
 
-
-<div class="position-absolute card_04">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">God Name</h5>
-            <p class="card-text">bla bla</p>
+    <div class="position-absolute card_04">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fs-2"><?= $vars['god']->god_title ?></h5>
+            </div>
         </div>
     </div>
-</div>
 
-
-</div>
-
-
-<!-- <div class="centerTekstje text-white">
-
-    <h1>This is the God Page of the God called : <?= $vars['god']->god_name ?></h1>
-    <br>
-    <h2>The ID of this God is : <?= $vars['god']->id ?></h2>
-    <br>
-    <br>
-    <div>
-        <a href="/allgods" class="btn btn-mau">Click here to return</a>
+    <div class="position-absolute card_05">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fs-4"><?= $vars['god']->god_over ?></h5>
+                <p class="card-text text-center fs-5">Known for</p>
+            </div>
+        </div>
     </div>
-</div> -->
+
+    <div class="position-absolute card_06">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><?= $vars['god']->god_quote ?></h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-absolute card_07">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fs-1"><?= $vars['god']->god_group ?></h5>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="position-absolute card_08">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fs-4"><?= $vars['god']->known_father ?> <?= $vars['god']->known_mother ?></h5>
+                <p class="card-text text-center fs-5">Known Parents</p>
+            </div>
+        </div>
+    </div>
+
+    <?php if ((int)$vars['god']->has_had_sex_with_zeus === 1) : ?>
+        <div class="position-absolute card_09 p-1 ">
+            <div class="card">
+                <div class="card-body">
+                    <img id="ZeusHeart" class="center" src="/public/images/heart.svg" />
+                    <h5 class="card-title fs-5 text-center">Has had relations with Zeus</h5>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <a id="GoBackKnop" href="/allgods"><button class="btn btn-lg btn-mau font-weight-bold border-white bt-dark mt-4">All Gods Page</button></a>
+
+
+</div>
