@@ -14,6 +14,12 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+QuestionTable / PollsTable have now been added to the DB. Added into the migration when called upon.
+
+Removed ArtistTable from DB / Seeders.
+
+Added VotePage / VoteController / VoteModel.
+
 Animations added (first timing, not finetuned yet) to 'ShowGodPage' (or God Detail Page).
 
 The landing page now has an if statement that checks if there is an active user, and will display content accordingly. Buttons added as well.
