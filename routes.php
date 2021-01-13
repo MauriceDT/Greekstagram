@@ -21,3 +21,6 @@ $router->get('artists', 'App/Controllers/ArtistController.php@index');
 //Newer pages
 $router->get('allgods', 'App/Controllers/AllGodsController.php@index');
 $router->get('allgods/detail', 'App/Controllers/AllGodsController.php@show');
+
+$router->get('vote', 'App/Controllers/VoteController.php@index');
+$router->post('vote', 'App/Controllers/VoteController.php@store');

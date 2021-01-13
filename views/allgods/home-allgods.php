@@ -11,8 +11,9 @@
             </div>
             <div class="col-md-6 text-white">
                 <p class="" id="allGodsPageVoteText">There is an active vote</p>
-                <p> <button class="btn btn-mau" id="allGodsPageVoteButton">Click Here To Show Vote</button> </p>
-
+                <a href="/vote">
+                    <p> <button class="btn btn-mau" id="allGodsPageVoteButton">Click Here To Show Vote</button> </p>
+                </a>
                 <p class="" id="allGodsPageShowGods">Show All Gods &darr; &darr; &darr;</p>
             </div>
         </div>

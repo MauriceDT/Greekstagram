@@ -41,7 +41,25 @@ return [
                 'role'          => 1,
                 'created'       => date('Y-m-d H:i:s'),
                 'created_by'    => 1,
-            ]
+            ],
+            [
+                'username'      => 'Hanna',
+                'follows_god'   => 'Demeter',
+                'email'         => 'hanna@test.nl',
+                'password'      => password_hash('hanna', PASSWORD_DEFAULT),
+                'role'          => 1,
+                'created'       => date('Y-m-d H:i:s'),
+                'created_by'    => 1,
+            ],
+            [
+                'username'      => 'Wouter',
+                'follows_god'   => 'Poseidon',
+                'email'         => 'wouter@test.nl',
+                'password'      => password_hash('wouter', PASSWORD_DEFAULT),
+                'role'          => 1,
+                'created'       => date('Y-m-d H:i:s'),
+                'created_by'    => 1,
+            ],
         ),
     ],
 ];
