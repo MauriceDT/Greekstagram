@@ -14,6 +14,12 @@ ________________________________________________________________________________
 
 Recently added (top = newest):
 
+Visually updated the header.
+
+Visual placeholders have been added for the 'Vote' page.
+
+Visual upgrade to the 'ME' page.
+
 QuestionTable / PollsTable have now been added to the DB. Added into the migration when called upon.
 
 Removed ArtistTable from DB / Seeders.
