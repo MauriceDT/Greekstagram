@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0.05rem 0.1rem rgba(180, 108, 108, 0.5);
 }
 
 #homepage_center_text {
@@ -14,11 +14,20 @@
 }
 
 #headerLogoText {
-    font-family: 'GFS Neohellenic', sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: 500;    
     font-style: italic;
-    font-weight: 700;
 }
 
+.logoutInfo {
+    position: absolute;
+    top: 25%;
+    left: 85%;
+}
+
+.gaEensWegUnderline {
+    text-decoration: none;
+}
 
 
 .centerTekstje {
@@ -81,13 +90,13 @@
 
 #headerIMG {
     filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(307deg) brightness(104%) contrast(101%);
-    width: 8rem;
+    width: 6rem;
     transition: 0.2s ease-in-out;
 }
 
 #headerIMG:hover {
     filter: invert(39%) sepia(16%) saturate(606%) hue-rotate(347deg) brightness(93%) contrast(87%);
-    width: 8rem;
+    width: 7rem;
 }
 
 #headerLoginIMG {
@@ -255,11 +264,13 @@
     border: none;
 }
 
-.GodShowBG {
-   position: center;
-   max-width: 100%;   
-   background-size: 100%;
+.GodShowBG { 
    background-attachment: fixed;
+   background-size: cover;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   filter: brightness(80%);
 
 }
 
@@ -548,4 +559,68 @@
     position: absolute ;
     left: 5%;
     top: 90%; 
+}
+
+.me_page_achtergrond {
+    background: url('../images/me_page_bg.jpg');
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    }
+
+.me_page_card_01 {
+    color: #403333;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(115, 97, 81, 0.7);
+    position: absolute ;
+    left: 20%;
+    top: 25%;
+    padding: 1em;
+    border: none;
+    z-index: 1;
+    animation-name: card_01_animation;
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.me_page_card_02 {
+    color: #403333;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(115, 97, 81, 0.7);
+    position: absolute ;
+    left: 40%;
+    top: 45%;
+    padding: 1em;
+    border: none;
+    z-index: 1;
+    animation-name: card_02_animation;
+    animation-duration: 0.7s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.me_page_card_03 {
+    color: #403333;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(115, 97, 81, 0.7);
+    position: absolute ;
+    left:  60%;
+    top: 75%;
+    padding: 1em;
+    border: none;
+    z-index: 1;
+    animation-name: card_03_animation;
+    animation-duration: 0.7s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: relative;
 }

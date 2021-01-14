@@ -1,30 +1,26 @@
 <?php require('partials/header.view.php'); ?>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1>My Username = <span class="bg-danger text-white"><?= $_SESSION['user']['username'] ?></span></h1>
-<br>
-<br>
-<h2>And I am a follower of <span class="bg-success text-white"><?= $_SESSION['user']['follows_god'] ?></span></h2>
-<h2>My E-mail Adress = <span class="bg-warning text-white"><?= $_SESSION['user']['email'] ?></span></h2>
-<br>
-<br>
-<a href="/allgods" class="text-dark fs-2 fw-bold">!!Go to All Gods Page!!</a>
-<br>
-<br>
-<br>
-<?php require('partials/footer.view.php');
-?>
+<div class="container-fluid m-0 p-0 me_page_achtergrond" id="">
+    <div class="position-absolute me_page_card_01">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fs-1"><?= $_SESSION['user']['username'] ?></h5>
+            </div>
+        </div>
+    </div>
+    <div class="position-absolute me_page_card_02">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fs-1">I serve only <?= $_SESSION['user']['follows_god'] ?></h5>
+            </div>
+        </div>
+    </div>
+    <div class="position-absolute me_page_card_03">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title fs-1">My current email is <?= $_SESSION['user']['email'] ?></h5>
+            </div>
+        </div>
+    </div>
+    <a id="GoBackKnop" href="/allgods"><button class="btn btn-lg btn-mau font-weight-bold border-white bt-dark mt-4">All Gods Page</button></a>
+
+</div>

@@ -6,26 +6,22 @@
                <span class="greekstagram-icon">
                   <img src="../images/statue.svg" id="headerIMG">
                   <div>
-                     <h1 id="headerLogoText">Greekstagram</h1>
+                     <h1 id="headerLogoText" class="">Greekstagram</h1>
                   </div>
                </span>
             </a>
          </div>
          <div class="col-md-6">
-            <div class="user-info">
+            <div class="user-info logoutInfo">
                <?php if (isset($_SESSION) && isset($_SESSION['user'])) : ?>
                   <div>
-                     <a href="/me"><?= $_SESSION['user']['username'] ?></a>
-                     <span>
-                        <a href="/logout">
-                           <img src="/public/images/logout.svg" id="logout" alt="logout" title="Log out" />
-                        </a>
-                     </span>
+                     <a href="/me"><button class="btn btn-lg btn-mau font-weight-bold border-white bt-dark m-2"><?= $_SESSION['user']['username'] ?></button></a>
+                     <a href="/logout"><button class="btn btn-lg btn-mau font-weight-bold border-white bt-dark m-2">Logout</button></a>
                   </div>
                <?php else : ?>
                   <div>
-                     <a href="/login">Log in</a>&nbsp;&nbsp;|
-                     <a href="/register">Register</a>
+                     <a class="gaEensWegUnderline" href="/login"><button class="btn btn-lg btn-mau font-weight-bold border-white bt-dark m-2">Login</a>
+                     <a class="gaEensWegUnderline" href="/register"><button class="btn btn-lg btn-mau font-weight-bold border-white bt-dark m-2">Register</a>
                   </div>
                <?php endif; ?>
             </div>
